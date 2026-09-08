@@ -30,7 +30,26 @@ public class UsuarioController {
         List<Usuario> resultado = template.query(sql,
                 new BeanPropertyRowMapper<>(Usuario.class));
 
+        if(resultado.isEmpty()) {
+            return ResponseEntity.status(204).build();
+        }
+
         return ResponseEntity.status(200).body(resultado);
+    }
+
+    // não utilizo esse GET no site, mas fiz ele de exemplo para demonstrar o status 404
+    @GetMapping("/{id}")
+    public ResponseEntity<Usuario> buscarId(
+            @PathVariable int id
+    ) {
+        String sql = "SELECT * FROM usuario WHERE id = ?";
+
+        try{
+            Usuario usuario = template.queryForObject(sql,
+                    new BeanPropertyRowMapper<>(Usuario.class), id);
+            return ResponseEntity.status(200).body(usuario);
+        }
+        return ResponseEntity.status(404).build();
     }
 
     @PostMapping
