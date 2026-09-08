@@ -1,0 +1,32 @@
+.cardLista {
+    width: 100%;
+    max-width: 650px;
+    min-height: 633px;
+
+    padding: 1.5rem;
+
+    background-color: #FFFFFF;
+
+    border-radius: 16px;
+
+    box-shadow: 0 2px 16px rgba(30, 58, 138, 0.10);
+}
+
+.titulo {
+    margin: 0 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.mensagem {
+    margin: 0;
+}
+
+.listaClientes {
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+
+    gap: 1rem;
+}

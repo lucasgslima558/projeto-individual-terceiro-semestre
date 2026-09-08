@@ -1,0 +1,84 @@
+.campo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #F3F0F0;
+    border: 1px solid transparent;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.campo input:focus-visible {
+    outline: none;
+    border-color: var(--border-selected);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px var(--border-shadow);
+}
+
+.campo label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    transition: 0.2s ease;
+    pointer-events: none;
+    font-size: 0.9rem;
+}
+
+.selectTurismo {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 13px;
+    background-color: #f4f1f1;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1.5rem;
+}
+
+.selectTurismo:focus {
+    outline: none;
+    border-color: var(--border-selected);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px var(--border-shadow);
+} 
+
+.campo input:focus + label,
+.campo input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 11px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    color: #023e8a;
+    padding: 0 4px;
+    left: 8px;
+}
+
+.campo select:focus + label,
+.campo select:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 11px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    color: #023e8a;
+    padding: 0 4px;
+    left: 8px;
+}
+
+.inputErro {
+    min-height: 18px;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: #d00000;
+}

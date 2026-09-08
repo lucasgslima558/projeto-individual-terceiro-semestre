@@ -1,0 +1,14 @@
+.titulo {
+    margin-bottom: 0.5rem;
+    font-size: 1.80rem;
+    font-weight: 600;
+    text-align: center;
+    color: #111827;
+}
+
+.subtitulo {
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #111827;
+    margin-bottom: 2rem;
+}
