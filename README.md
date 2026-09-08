@@ -1,3 +1,3 @@
-# Parte Frontend do projeto
+# Tourly
 
-Nesta seção, faço a criação da interface com JSX, utilizando 5 componentes e 6 arquivos de CSS modularizado, assim como faço a integração através de axios.
+Este é um projeto individual com fins acadêmicos, focado em desenvolver um site de turismo utilizando React, JSX, CSS Modules, requisições Web e integração com API.
